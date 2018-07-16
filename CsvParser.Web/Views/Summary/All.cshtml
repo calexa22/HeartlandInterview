@@ -1,0 +1,11 @@
+﻿@model SummaryViewModel
+@{
+}
+<h2>Uploads</h2>
+<ul>
+    @foreach (SingleUploadSummary summary in Model.Summaries)
+    {
+    <li>
+        Summary @summary.UploadId.ToString()!
+    </li>}
+</ul>
